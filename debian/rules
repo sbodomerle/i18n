@@ -1,0 +1,7 @@
+#!/usr/bin/make -f
+
+export DH_GOPKG := github.com/Unknwon/i18n
+export DH_GOLANG_EXCLUDES := ui18n
+
+%:
+	dh $@ --buildsystem=golang --with=golang --builddirectory=_build

@@ -1,0 +1,21 @@
+Source: golang-github-unknwon-i18n
+Section: devel
+Priority: extra
+Maintainer: pkg-go <pkg-go-maintainers@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 9),
+               dh-golang,
+               golang-go
+Standards-Version: 3.9.8
+Homepage: https://github.com/Unknwon/i18n
+
+Package: golang-github-unknwon-i18n-dev
+Architecture: all
+Depends: ${misc:Depends},
+         golang-go
+Built-Using: ${misc:Built-Using}
+Description: App Internationalization and Localization.
+ Package i18n is for app Internationalization and Localization.
+ .
+ This package provides multiple-language options to improve user experience.
+ Sites like Go Walker and gogs.io are using this module to implement Chinese
+ and English user interfaces.
